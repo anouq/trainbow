@@ -1,3 +1,13 @@
+$xs: 350px;
+$s: 400px;
+$m: 680px;
+$l: 960px;
+$xl: 1400px;
+
+$light-pink: #f7a8b8;
+$light-blue: #4aabd6;
+$purple: #4c1fc0;
+
 html, body {
     padding: 0;
     margin: 0;
@@ -17,6 +27,22 @@ li {
     padding: 3px;
     font-size: 15px;
     list-style: none;
+}
+
+a {
+    color: $purple;
+    text-decoration: none;
+    border-bottom: 1px dotted $purple;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+
+    &:hover {
+        color: $light-pink;
+        border-bottom: 1px dotted $light-pink;
+        transition: all .4s ease;
+        -webkit-transition: all .4s ease;
+        text-decoration: none;
+    }
 }
 
 fa-icon {

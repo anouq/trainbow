@@ -1,12 +1,4 @@
-$xs: 350px;
-$s: 400px;
-$m: 680px;
-$l: 960px;
-$xl: 1400px;
-
-$light-pink: #f7a8b8;
-$light-blue: #4aabd6;
-$purple: #4c1fc0;
+@import '../styles';
 
 $logo-width: 300px;
 $logo-height: 212px;
@@ -145,21 +137,6 @@ h3 {
     letter-spacing: 3px;
 }
 
-a {
-    color: $purple;
-    text-decoration: none;
-    border-bottom: 1px dotted $purple;
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease;
-
-    &:hover {
-        color: $light-pink;
-        border-bottom: 1px dotted $light-pink;
-        transition: all .4s ease;
-        -webkit-transition: all .4s ease;
-        text-decoration: none;
-    }
-}
 
 /*
     Particular elements
