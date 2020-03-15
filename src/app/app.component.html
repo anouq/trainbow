@@ -1,7 +1,7 @@
 <div class="container">
     <div class="logo"></div>
     <div class="slogan">
-        <h3>Het LGBTQI-netwerk van NS!</h3>
+        <h3 translate>YELL</h3>
     </div>
 
     <section class="social">
@@ -21,29 +21,28 @@
 
     <nav class="menu-container">
         <ul class="menu">
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Agenda</a></li>
-            <li><a href="#">Lid worden</a></li>
-            <li><a href="#">Over ons</a></li>
+            <li><a href="#" translate>MENU.BLOG</a></li>
+            <li><a href="#" translate>MENU.AGENDA</a></li>
+            <li><a href="#" translate>MENU.MEMBER</a></li>
+            <li><a href="#" translate>MENU.ABOUT</a></li>
         </ul>
     </nav>
 
-
     <section class="agenda">
-        <h1>Agenda</h1>
+        <h1 translate>HEADINGS.AGENDA</h1>
         <trainbow-agenda></trainbow-agenda>
     </section>
     <section class="member">
-        <h1>Lid worden</h1>
-        <p [innerHTML]="'member' | translate"></p>
+        <h1 translate>HEADINGS.MEMBER</h1>
+        <p [innerHTML]="'STATIC.MEMBER' | translate"></p>
     </section>
     <section class="about">
-        <h1>Over ons</h1>
-        <p [innerHTML]="'about' | translate"></p>
+        <h1 translate>HEADINGS.ABOUT</h1>
+        <p [innerHTML]="'STATIC.ABOUT' | translate"></p>
     </section>
 
     <article class="blog">
-        <h1>Blog</h1>
+        <h1 translate>HEADINGS.BLOG</h1>
         <h2>Titel blog post</h2>
 
         <p>
@@ -83,7 +82,7 @@
         <p>
             Afsluiter!
         </p>
-        <h2>Alle posts</h2>
+        <h2 translate>HEADINGS.ALL_POSTS</h2>
         <ul>
             <li><span class="date">15 maart 2020</span><a href="#" class="inactive">Titel blog post</a></li>
             <li><span class="date">1 maart 2020</span><a href="#">Eerdere post</a></li>
