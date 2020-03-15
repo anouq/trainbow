@@ -1,0 +1,88 @@
+%flag1 {
+    background-image: radial-gradient(circle,
+        #FFF,
+        #FFF 12.5%,
+        #CCF0FE 12.5%,
+        #CCF0FE 25%,
+        #FDE5EA 25%,
+        #FDE5EA 37.5%,
+        #FFF 37.5%,
+        #FFF 50%,
+        #FDE5EA 50%,
+        #FDE5EA 62.5%,
+        #CCF0FE 62.5%,
+        #CCF0FE 75%,
+        #FFF 75%,
+        #FFF 100%);
+}
+
+%flag2 {
+    @extend %vertical-stripes;
+
+    background-image: linear-gradient(
+            to right,
+            #D60270,
+            #D60270 40%,
+            #9B4F96 40%,
+            #9B4F96 60%,
+            #0038A8 60%,
+            #0038A8 100%
+    );
+}
+
+%flag3 {
+    @extend %vertical-stripes;
+
+    background-image: linear-gradient(
+            to right,
+            #FFF430,
+            #FFF430 25%,
+            #FFFFFF 25%,
+            #FFFFFF 50%,
+            #9C59D1 50%,
+            #9C59D1 75%,
+            #000000 75%,
+            #000000 100%
+    );
+}
+
+%flag4 {
+    @extend %vertical-stripes;
+
+    background-image: linear-gradient(
+            to right,
+            #D62900,
+            #D62900 20%,
+            #FF9B55 20%,
+            #FF9B55 40%,
+            #FFFFFF 40%,
+            #FFFFFF 60%,
+            #D461A6 60%,
+            #D461A6 80%,
+            #A50062 80%,
+            #A50062 100%
+    );
+}
+
+%flag5 {
+    @extend %vertical-stripes;
+
+    background-image: linear-gradient(
+            to right,
+            #000,
+            #000 25%,
+            #A4A4A4 25%,
+            #A4A4A4 50%,
+            #FFF 50%,
+            #FFF 75%,
+            #810081 75%,
+            #810081 100%
+    );
+}
+
+%vertical-stripes {
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
