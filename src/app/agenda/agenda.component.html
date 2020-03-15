@@ -8,13 +8,16 @@
             <span>{{item.name}}</span>
         </span>
         <span class="item-row" *ngIf="item.location">
-            <fa-icon [icon]="faMapMarkerAlt"></fa-icon><span>{{item.location}}</span>
+            <fa-icon [icon]="faMapMarkerAlt"></fa-icon>
+            <span class="item-text">{{item.location}}</span>
         </span>
         <span class="item-row" *ngIf="item.time">
-            <fa-icon [icon]="faClock"></fa-icon><span>{{item.time}}</span>
+            <fa-icon [icon]="faClock"></fa-icon>
+            <span class="item-text">{{item.time}}</span>
         </span>
         <span class="item-row" *ngIf="item.details">
-            <fa-icon [icon]="faInfoCircle"></fa-icon><span [innerHTML]="item.details"></span>
+            <fa-icon [icon]="faInfoCircle"></fa-icon>
+            <span class="item-text" [innerHTML]="item.details"></span>
         </span>
     </li>
 </ul>
