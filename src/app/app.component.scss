@@ -1,0 +1,266 @@
+@import '../styles';
+
+$xs: 350px;
+$s: 400px;
+$m: 680px;
+$l: 960px;
+$xl: 1400px;
+
+$light-pink: #f7a8b8;
+$light-blue: #4aabd6;
+$purple: #4c1fc0;
+
+$logo-width: 300px;
+$logo-height: 212px;
+$logo-ratio-large: 0.75;
+$logo-ratio-medium: 0.5;
+
+/*
+    Grid
+*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+
+    @media screen and (min-width: $l) {
+        width: 80%;
+    }
+
+    @media screen and (min-width: $xl) {
+        width: 70%;
+    }
+}
+
+.logo {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+@media screen and (max-width: $m) {
+    .slogan {
+        display: none;
+    }
+}
+
+.social {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.menu-container {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.blog {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.agenda {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.member {
+    grid-area: 6 / 1 / 7 / 2;
+}
+
+.about {
+    grid-area: 7 / 1 / 8 / 2;
+}
+
+@media screen and (min-width: $m) {
+    .container {
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: repeat(5, auto);
+        grid-column-gap: 35px;
+        grid-row-gap: 10px;
+        margin-left: 8px;
+    }
+
+    .logo {
+        grid-area: 1 / 1 / 4 / 2;
+    }
+
+    .slogan {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .social {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .menu-container {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .agenda {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .member {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+
+    .about {
+        grid-area: 6 / 1 / 7 / 2;
+    }
+
+    .blog {
+        grid-area: 4 / 2 / 7 / 3;
+    }
+}
+
+/*
+    Commonly used elements
+*/
+p {
+    padding: 7px;
+}
+
+h1 {
+    text-transform: lowercase;
+    letter-spacing: 3px;
+    color: #3e3e3e;
+    text-align: center;
+
+    background-image: radial-gradient(circle,
+        #FFF,
+        #FFF 12.5%,
+        #CCF0FE 12.5%,
+        #CCF0FE 25%,
+        #FDE5EA 25%,
+        #FDE5EA 37.5%,
+        #FFF 37.5%,
+        #FFF 50%,
+        #FDE5EA 50%,
+        #FDE5EA 62.5%,
+        #CCF0FE 62.5%,
+        #CCF0FE 75%,
+        #FFF 75%,
+        #FFF 100%);
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+h3 {
+    letter-spacing: 3px;
+}
+
+li {
+    padding: 3px;
+    font-size: 15px;
+    list-style: none;
+}
+
+a {
+    color: $purple;
+    text-decoration: none;
+    border-bottom: 1px dotted $purple;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+
+    &:hover {
+        color: $light-pink;
+        border-bottom: 1px dotted $light-pink;
+        transition: all .4s ease;
+        -webkit-transition: all .4s ease;
+        text-decoration: none;
+    }
+}
+
+.date {
+    color: grey;
+    letter-spacing: 3px;
+    padding-right: 7px;
+}
+
+fa-icon {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: center;
+}
+
+/*
+    Particular elements
+*/
+.logo, .slogan, .social, .menu-container {
+    place-self: center;
+}
+
+.logo {
+    background: url('../assets/logo.png') no-repeat;
+    width: calc(#{$logo-width} * #{$logo-ratio-medium});
+    height: calc(#{$logo-height} * #{$logo-ratio-medium});
+    background-size: calc(#{$logo-width} * #{$logo-ratio-medium}) calc(#{$logo-height} * #{$logo-ratio-medium});
+    padding: 0 0 30px;
+
+    @media screen and (min-width: $m) {
+        width: calc(#{$logo-width} * #{$logo-ratio-large});
+        height: calc(#{$logo-height} * #{$logo-ratio-large});
+        background-size: calc(#{$logo-width} * #{$logo-ratio-large}) calc(#{$logo-height} * #{$logo-ratio-large});
+
+        padding: 0;
+    }
+}
+
+.social {
+    a {
+        color: #3e3e3e;
+        border-bottom: none;
+
+        &:hover {
+            color: $light-pink;
+            transition: all .4s ease;
+            -webkit-transition: all .4s ease;
+            text-decoration: none;
+        }
+    }
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: inline;
+        float: left;
+        list-style: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 13px;
+        text-transform: lowercase;
+
+        @media screen and (min-width: $xs) {
+            font-size: 16px;
+        }
+
+        @media screen and (min-width: $s) {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 18px;
+        }
+
+        @media screen and (min-width: $l) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+    }
+}
+
+.agenda {
+    li {
+        padding-bottom: 15px;
+        line-height: 25px;
+    }
+}
+
+.inactive {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    border: none;
+    color: inherit;
+}
+
