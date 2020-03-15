@@ -2,8 +2,8 @@
     <li *ngFor="let item of agendaItems">
         <span class="item-head item-row">
             <span class="item-date">
-                {{ item.date | date: 'longDate' }}
-                <span *ngIf="item.endDate"> t/m {{ item.endDate | date: 'longDate' }}</span>
+                {{ item.date | date: 'd MMMM' }}
+                <span *ngIf="item.endDate"> - {{ item.endDate | date: 'd MMMM' }}</span>
             </span>
             <span>{{item.name}}</span>
         </span>

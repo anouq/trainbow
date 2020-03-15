@@ -7,7 +7,7 @@
         "BLOG": "Blog"
     },
     "HEADINGS": {
-        "AGENDA": "Agenda",
+        "AGENDA": "Agenda <small>2020</small>",
         "MEMBER": "Lid worden",
         "ABOUT": "Over ons",
         "BLOG": "Blog",
@@ -15,6 +15,6 @@
     },
     "STATIC": {
         "MEMBER": "Wil je lid worden van Trainbow? Heb je een vraag? Of wil je op de hoogte blijven van onze activiteiten? Neem dan contact met ons op! Je kunt ons bereiken via <a href=\"mailto:trainbow@ns.nl\">trainbow<span hidden aria-hidden=\"true\">bar</span>@ns.nl</a>, of via sociale media.",
-        "ABOUT": "<p>Trainbow is een netwerk van collega’s die samen willen werken aan een prettige werkplek voor homoseksuele, lesbische, biseksuele, transgender, intersekse en queer collega's. Sterker nog, iedereen is welkom!</p><p>Trainbow bestaat omdat iedereen welkom is bij NS en omdat dat het toch nog steeds lastig is om op je werk jezelf te kunnen zijn. Om te vertellen van wie je houdt of met wie je woont. Dat kan met je collega’s te maken hebben, en met jezelf. Trainbow wil een veilige haven bieden om gelijkgestemden te ontmoeten. Om af en toe je te verenigen met anderen die dezelfde worsteling als jij kennen. Om daarna weer meer jezelf te zijn op je werkplek.</p><p>Binnen NS geeft Trainbow de directie gevraagd en ongevraagd advies over seksuele- en genderdiversiteit. Alles met het doel: zorgen dat alle collega’s zichzelf kunnen zijn en zich veilig voelen bij NS. Sluit je vrijblijvend aan bij ons netwerk, <a class=\"eh\" href=\"mailto:trainbow@ns.nl\">stuur ons een <span hidden aria-hidden=\"true\">bar</span>mail</a> en blijf op de hoogte van alle ontwikkelingen.<p>"
+        "ABOUT": "<p>Trainbow is een netwerk van collega’s die samen willen werken aan een prettige werkplek voor homoseksuele, lesbische, biseksuele, transgender, intersekse en queer collega's. Sterker nog, iedereen is welkom!</p><p>Trainbow bestaat omdat iedereen welkom is bij NS en omdat dat het toch nog steeds lastig is om op je werk jezelf te kunnen zijn. Om te vertellen van wie je houdt of met wie je woont. Dat kan met je collega’s te maken hebben, en met jezelf. Trainbow wil een veilige haven bieden om gelijkgestemden te ontmoeten. Om af en toe je te verenigen met anderen die dezelfde worsteling als jij kennen. Om daarna weer meer jezelf te zijn op je werkplek.</p><p>Binnen NS geeft Trainbow de directie gevraagd en ongevraagd advies over seksuele- en genderdiversiteit. Alles met het doel: zorgen dat alle collega’s zichzelf kunnen zijn en zich veilig voelen bij NS. Sluit je vrijblijvend aan bij ons netwerk, <a href=\"mailto:trainbow@ns.nl\">stuur ons een <span hidden aria-hidden=\"true\">bar</span>mail</a> en blijf op de hoogte van alle ontwikkelingen.<p>"
     }
 }
