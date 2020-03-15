@@ -1,0 +1,24 @@
+li {
+    padding-bottom: 15px;
+    line-height: 25px;
+}
+
+.item-head {
+    font-weight: bold;
+}
+
+.item-row {
+    display: block;
+}
+
+.item-date {
+    &:after {
+        content: "\2014";
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+}
+
+fa-icon {
+    font-size: 12px;
+}

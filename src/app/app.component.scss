@@ -146,12 +146,6 @@ h3 {
     letter-spacing: 3px;
 }
 
-li {
-    padding: 3px;
-    font-size: 15px;
-    list-style: none;
-}
-
 a {
     color: $purple;
     text-decoration: none;
@@ -166,19 +160,6 @@ a {
         -webkit-transition: all .4s ease;
         text-decoration: none;
     }
-}
-
-.date {
-    color: grey;
-    letter-spacing: 3px;
-    padding-right: 7px;
-}
-
-fa-icon {
-    display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
-    vertical-align: center;
 }
 
 /*
@@ -249,13 +230,6 @@ fa-icon {
     }
 }
 
-.agenda {
-    li {
-        padding-bottom: 15px;
-        line-height: 25px;
-    }
-}
-
 .inactive {
     pointer-events: none;
     cursor: default;
@@ -263,4 +237,3 @@ fa-icon {
     border: none;
     color: inherit;
 }
-

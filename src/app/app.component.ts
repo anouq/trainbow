@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faClock, faEnvelope, faInfoCircle, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
     selector: 'trainbow-app-root',
@@ -12,7 +12,4 @@ export class AppComponent {
     public faInstagram = faInstagram;
     public faFacebook = faFacebook;
     public faEnvelope = faEnvelope;
-    public faMapMarkerAlt = faMapMarkerAlt;
-    public faClock = faClock;
-    public faInfoCircle = faInfoCircle;
 }

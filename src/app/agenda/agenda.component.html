@@ -1,0 +1,20 @@
+<ul>
+    <li *ngFor="let item of agendaItems">
+        <span class="item-head item-row">
+            <span class="item-date">
+                {{ item.date | date: 'longDate' }}
+                <span *ngIf="item.endDate"> t/m {{ item.endDate | date: 'longDate' }}</span>
+            </span>
+            <span>{{item.name}}</span>
+        </span>
+        <span class="item-row" *ngIf="item.location">
+            <fa-icon [icon]="faMapMarkerAlt"></fa-icon><span>{{item.location}}</span>
+        </span>
+        <span class="item-row" *ngIf="item.time">
+            <fa-icon [icon]="faClock"></fa-icon><span>{{item.time}}</span>
+        </span>
+        <span class="item-row" *ngIf="item.details">
+            <fa-icon [icon]="faInfoCircle"></fa-icon><span [innerHTML]="item.details"></span>
+        </span>
+    </li>
+</ul>
