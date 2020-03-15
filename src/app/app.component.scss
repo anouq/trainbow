@@ -107,15 +107,23 @@ p {
     padding: 7px;
 }
 
+.heading-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @extend %flag#{random(5)};
+}
+
 h1 {
     text-transform: lowercase;
     letter-spacing: 3px;
     color: #3e3e3e;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    @extend %flag#{random(5)};
+    margin: 0 auto;
+    padding: 0 5px;
+    background: #fff;
+    width: fit-content;
+    border-radius: 5px;
 }
 
 h2 {

@@ -29,20 +29,29 @@
     </nav>
 
     <section class="agenda">
-        <h1 [innerHTML]="'HEADINGS.AGENDA' | translate"></h1>
+        <div class="heading-container">
+            <h1 [innerHTML]="'HEADINGS.AGENDA' | translate"></h1>
+        </div>
+
         <trainbow-agenda></trainbow-agenda>
     </section>
     <section class="member">
-        <h1 translate>HEADINGS.MEMBER</h1>
+        <div class="heading-container">
+            <h1 translate>HEADINGS.MEMBER</h1>
+        </div>
         <p [innerHTML]="'STATIC.MEMBER' | translate"></p>
     </section>
     <section class="about">
-        <h1 translate>HEADINGS.ABOUT</h1>
+        <div class="heading-container">
+            <h1 translate>HEADINGS.ABOUT</h1>
+        </div>
         <p [innerHTML]="'STATIC.ABOUT' | translate"></p>
     </section>
 
     <article class="blog">
-        <h1 translate>HEADINGS.BLOG</h1>
+        <div class="heading-container">
+            <h1 translate>HEADINGS.BLOG</h1>
+        </div>
         <h2>Titel blog post</h2>
 
         <p>
