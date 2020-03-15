@@ -110,6 +110,9 @@ p {
 .heading-container {
     padding-top: 10px;
     padding-bottom: 10px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
 
     @extend %flag#{random(5)};
 }
