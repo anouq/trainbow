@@ -3,28 +3,31 @@
     <div class="slogan">
         <h3>Het LGBTQI-netwerk van NS!</h3>
     </div>
+
     <section class="social">
-        <a href="#">
+        <a href="#" aria-label="Instagram">
             <fa-icon [icon]="faInstagram"></fa-icon>
         </a>
-        <a href="#">
+        <a href="#" aria-label="Facebook">
             <fa-icon [icon]="faFacebook"></fa-icon>
         </a>
-        <a href="#">
+        <a href="#" aria-label="Twitter">
             <fa-icon [icon]="faTwitter"></fa-icon>
         </a>
-        <a href="#">
+        <a href="#" aria-label="E-mail">
             <fa-icon [icon]="faEnvelope"></fa-icon>
         </a>
     </section>
-    <section class="menu-container">
+
+    <nav class="menu-container">
         <ul class="menu">
             <li><a href="#">Blog</a></li>
             <li><a href="#">Agenda</a></li>
             <li><a href="#">Lid worden</a></li>
             <li><a href="#">Over ons</a></li>
         </ul>
-    </section>
+    </nav>
+
 
     <section class="agenda">
         <h1>Agenda</h1>
@@ -38,7 +41,8 @@
         <h1>Over ons</h1>
         <p [innerHTML]="'about' | translate"></p>
     </section>
-    <section class="blog">
+
+    <article class="blog">
         <h1>Blog</h1>
         <h2>Titel blog post</h2>
 
@@ -52,18 +56,28 @@
             Dit <a href="/">is een</a> link.
         </p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut sollicitudin libero, fringilla fringilla
-            nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eget
-            purus augue. Donec finibus volutpat vulputate. Aliquam at nisi eros. Mauris et blandit justo, eget rhoncus
-            libero. Phasellus semper, odio et sollicitudin vehicula, leo elit congue ex, quis iaculis urna dui sit amet
-            justo. In augue ligula, efficitur finibus magna non, sollicitudin accumsan orci. Interdum et malesuada fames
-            ac ante ipsum primis in faucibus. Nulla pharetra lacus quis massa efficitur, ut vulputate nunc ultrices.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut sollicitudin libero, fringilla
+            fringilla
+            nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean
+            eget
+            purus augue. Donec finibus volutpat vulputate. Aliquam at nisi eros. Mauris et blandit justo, eget
+            rhoncus
+            libero. Phasellus semper, odio et sollicitudin vehicula, leo elit congue ex, quis iaculis urna dui
+            sit amet
+            justo. In augue ligula, efficitur finibus magna non, sollicitudin accumsan orci. Interdum et
+            malesuada fames
+            ac ante ipsum primis in faucibus. Nulla pharetra lacus quis massa efficitur, ut vulputate nunc
+            ultrices.
         </p>
         <p>
-            Vivamus vitae quam et odio venenatis mattis eget tincidunt justo. Nullam accumsan convallis orci, ut posuere
-            mauris ullamcorper in. Integer molestie neque pharetra sem maximus sagittis. Duis aliquam tristique ante, ut
-            luctus ligula gravida ut. Aliquam facilisis eget dolor at laoreet. Pellentesque nec orci semper, egestas
-            magna vitae, lobortis leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+            Vivamus vitae quam et odio venenatis mattis eget tincidunt justo. Nullam accumsan convallis orci, ut
+            posuere
+            mauris ullamcorper in. Integer molestie neque pharetra sem maximus sagittis. Duis aliquam tristique
+            ante, ut
+            luctus ligula gravida ut. Aliquam facilisis eget dolor at laoreet. Pellentesque nec orci semper,
+            egestas
+            magna vitae, lobortis leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos
             himenaeos.
         </p>
         <p>
@@ -76,5 +90,6 @@
             <li><span class="date">23 november 2019</span><a href="#">En nog een</a></li>
         </ul>
 
-    </section>
+    </article>
+
 </div>
