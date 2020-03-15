@@ -1,3 +1,3 @@
 # Trainbow
 
-Source code of [Trainbow.nl](http://www.trainbow.nl), an LGBTQI+ company network.
+Source code of [trainbow.nl](http://trainbow.nl), an LGBTQI+ company network
