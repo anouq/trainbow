@@ -1,0 +1,18 @@
+<h2>{{ blogItems[0].title }}</h2>
+<p>
+    <small class="date">{{ blogItems[0].date | date: 'd MMMM y' }}</small>
+</p>
+
+<p *ngFor="let paragraph of blogItems[0].message" [innerHTML]="paragraph"></p>
+
+<h2 translate>HEADINGS.ALL_POSTS</h2>
+
+<ul class="all-posts">
+    <ng-container *ngFor="let item of blogItems">
+        <li *ngIf="item.archive">
+            <small class="date">{{ item.date | date: 'd MMMM y' }}</small>
+            <a href="#">{{ item.title }}<span *ngIf="item === blogItems[0]"></span></a>
+        </li>
+
+    </ng-container>
+</ul>

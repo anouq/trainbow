@@ -32,72 +32,26 @@
         <div class="heading-container">
             <h1 [innerHTML]="'HEADINGS.AGENDA' | translate"></h1>
         </div>
-
         <trainbow-agenda></trainbow-agenda>
     </section>
     <section class="member">
         <div class="heading-container">
             <h1 translate>HEADINGS.MEMBER</h1>
         </div>
-        <p [innerHTML]="'STATIC.MEMBER' | translate"></p>
+        <div [innerHTML]="'STATIC.MEMBER' | translate"></div>
     </section>
     <section class="about">
         <div class="heading-container">
             <h1 translate>HEADINGS.ABOUT</h1>
         </div>
-        <p [innerHTML]="'STATIC.ABOUT' | translate"></p>
+        <div [innerHTML]="'STATIC.ABOUT' | translate"></div>
     </section>
 
     <article class="blog">
         <div class="heading-container">
             <h1 translate>HEADINGS.BLOG</h1>
         </div>
-        <h2>Titel blog post</h2>
-
-        <p>
-            <small class="date">15 maart 2020</small>
-        </p>
-        <p>
-            Beste Trainbowers,
-        </p>
-        <p>
-            Dit <a href="/">is een</a> link.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut sollicitudin libero, fringilla
-            fringilla
-            nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean
-            eget
-            purus augue. Donec finibus volutpat vulputate. Aliquam at nisi eros. Mauris et blandit justo, eget
-            rhoncus
-            libero. Phasellus semper, odio et sollicitudin vehicula, leo elit congue ex, quis iaculis urna dui
-            sit amet
-            justo. In augue ligula, efficitur finibus magna non, sollicitudin accumsan orci. Interdum et
-            malesuada fames
-            ac ante ipsum primis in faucibus. Nulla pharetra lacus quis massa efficitur, ut vulputate nunc
-            ultrices.
-        </p>
-        <p>
-            Vivamus vitae quam et odio venenatis mattis eget tincidunt justo. Nullam accumsan convallis orci, ut
-            posuere
-            mauris ullamcorper in. Integer molestie neque pharetra sem maximus sagittis. Duis aliquam tristique
-            ante, ut
-            luctus ligula gravida ut. Aliquam facilisis eget dolor at laoreet. Pellentesque nec orci semper,
-            egestas
-            magna vitae, lobortis leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos
-            himenaeos.
-        </p>
-        <p>
-            Afsluiter!
-        </p>
-        <h2 translate>HEADINGS.ALL_POSTS</h2>
-        <ul class="all-posts">
-            <li><span class="date">15 maart 2020</span><a href="#" class="inactive">Titel blog post</a></li>
-            <li><span class="date">1 maart 2020</span><a href="#">Eerdere post</a></li>
-            <li><span class="date">23 november 2019</span><a href="#">En nog een</a></li>
-        </ul>
-
+        <trainbow-blog></trainbow-blog>
     </article>
 
 </div>

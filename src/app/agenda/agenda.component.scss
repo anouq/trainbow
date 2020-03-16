@@ -1,12 +1,13 @@
 @import '../../styles';
 
 ul {
-    padding: 10px 30px;
+    padding: 20px 30px 10px;
 }
 
 li {
-    padding-bottom: 15px;
+    padding: 3px 3px 15px;
     line-height: 25px;
+    font-size: 15px;
 }
 
 .item-head {
@@ -31,5 +32,5 @@ li {
 
 fa-icon {
     font-size: 12px;
-    padding-right: 5px;
+    padding-left: 0;
 }

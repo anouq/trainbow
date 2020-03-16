@@ -9,11 +9,13 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AgendaComponent } from './agenda/agenda.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        AgendaComponent
+        AgendaComponent,
+        BlogComponent
     ],
     imports: [
         BrowserModule,

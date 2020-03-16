@@ -24,6 +24,10 @@
         "@fortawesome/free-solid-svg-icons": "^5.12.1",
         "@ngx-translate/core": "^12.1.2",
         "@ngx-translate/http-loader": "^4.0.0",
+        "moment": "^2.24.0",
+        "moment-round": "^1.0.1",
+        "moment-timezone": "^0.5.28",
+        "moment-timezone-es6": "^1.0.0",
         "rxjs": "~6.5.4",
         "tslib": "^1.10.0",
         "zone.js": "~0.10.2"

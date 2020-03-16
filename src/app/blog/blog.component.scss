@@ -1,0 +1,24 @@
+@import '../../styles';
+
+.all-posts {
+    padding: 0 30px;
+
+    li {
+        padding-bottom: 5px;
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+    a {
+        border: none;
+    }
+
+    .inactive {
+        pointer-events: none;
+        cursor: default;
+        text-decoration: none;
+        border: none;
+        color: inherit;
+    }
+
+}

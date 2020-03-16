@@ -6,9 +6,6 @@ $logo-height: 212px;
 $logo-ratio-large: 0.75;
 $logo-ratio-medium: 0.5;
 
-/*
-    Grid
-*/
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -63,7 +60,7 @@ $logo-ratio-medium: 0.5;
         grid-template-columns: 2fr 3fr;
         grid-template-rows: repeat(5, auto);
         grid-column-gap: 35px;
-        grid-row-gap: 10px;
+        grid-row-gap: 25px;
         margin-left: 8px;
     }
 
@@ -100,51 +97,16 @@ $logo-ratio-medium: 0.5;
     }
 }
 
-/*
-    Commonly used elements
-*/
-p {
-    padding: 7px;
-}
-
 .heading-container {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     border-radius: 5px;
     margin: 0 auto;
-    width: 60%;
+    width: 65%;
 
     @extend %flag#{random(5)};
 }
 
-h1 {
-    text-transform: lowercase;
-    letter-spacing: 3px;
-    color: #3e3e3e;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0 5px;
-    background: #fff;
-    width: fit-content;
-    border-radius: 5px;
-}
-
-h2 {
-    margin-left: 20px;
-}
-
-h3 {
-    letter-spacing: 3px;
-}
-
-fa-icon {
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-/*
-    Particular elements
-*/
 .logo, .slogan, .social, .menu-container {
     place-self: center;
 }
@@ -181,14 +143,11 @@ fa-icon {
 
 .menu {
     padding: 0;
-    margin: 0;
 
     li {
         display: inline;
         float: left;
-        list-style: none;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding: 0 5px;
         font-size: 13px;
         text-transform: lowercase;
 
@@ -208,16 +167,4 @@ fa-icon {
         }
 
     }
-}
-
-.all-posts {
-    padding: 0 30px;
-}
-
-.inactive {
-    pointer-events: none;
-    cursor: default;
-    text-decoration: none;
-    border: none;
-    color: inherit;
 }
