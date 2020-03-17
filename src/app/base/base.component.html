@@ -21,33 +21,33 @@
 
     <nav class="menu-container">
         <ul class="menu">
-            <li><a href="#" translate>MENU.BLOG</a></li>
-            <li><a href="#" translate>MENU.AGENDA</a></li>
-            <li><a href="#" translate>MENU.MEMBER</a></li>
-            <li><a href="#" translate>MENU.ABOUT</a></li>
+            <li><a [routerLink] = "['.']" fragment="blog" translate>MENU.BLOG</a></li>
+            <li><a [routerLink] = "['.']" fragment="agenda" translate>MENU.AGENDA</a></li>
+            <li><a [routerLink] = "['.']" fragment="member" translate>MENU.MEMBER</a></li>
+            <li><a [routerLink] = "['.']" fragment="about" translate>MENU.ABOUT</a></li>
         </ul>
     </nav>
 
-    <section class="agenda">
+    <section class="agenda" id="agenda">
         <div class="heading-container">
             <h1 [innerHTML]="'HEADINGS.AGENDA' | translate"></h1>
         </div>
         <trainbow-agenda></trainbow-agenda>
     </section>
-    <section class="member">
+    <section class="member" id="member">
         <div class="heading-container">
             <h1 translate>HEADINGS.MEMBER</h1>
         </div>
         <div [innerHTML]="'STATIC.MEMBER' | translate"></div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="heading-container">
             <h1 translate>HEADINGS.ABOUT</h1>
         </div>
         <div [innerHTML]="'STATIC.ABOUT' | translate"></div>
     </section>
 
-    <article class="blog">
+    <article class="blog" id="blog">
         <div class="heading-container">
             <h1 translate>HEADINGS.BLOG</h1>
         </div>
