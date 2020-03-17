@@ -1,6 +1,18 @@
 @import '../../styles';
 
-.all-posts {
+.not-found {
+    display: block;
+    font-size: 0.7em;
+    color: $dark-red;
+    font-weight: bold;
+    margin: 0.83em 0 0.83em 20px;
+}
+
+.item-date {
+    padding-left: 14px
+}
+
+.all-items {
     padding: 0 30px;
 
     li {

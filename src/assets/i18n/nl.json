@@ -1,5 +1,6 @@
 {
     "YELL": "Het LGBTQI-netwerk van NS!",
+    "NOT_FOUND": "De gezochte blog post kon niet worden gevonden! Daarom tonen we hieronder de meest recente post.",
     "MENU": {
         "AGENDA": "Agenda",
         "MEMBER": "Lid worden",
@@ -11,7 +12,7 @@
         "MEMBER": "Lid worden",
         "ABOUT": "Over ons",
         "BLOG": "Blog",
-        "ALL_POSTS": "Alle posts"
+        "ALL_ITEMS": "Alle posts"
     },
     "STATIC": {
         "MEMBER": "<p>Wil je lid worden van Trainbow? Heb je een vraag? Of wil je op de hoogte blijven van onze activiteiten? Neem dan contact met ons op! Je kunt ons bereiken via <a href=\"mailto:trainbow@ns.nl\">trainbow<span hidden aria-hidden=\"true\">bar</span>@ns.nl</a>, of via sociale media.</p>",

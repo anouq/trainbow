@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Location } from '@angular/common';
+import { Component, Input, OnInit } from '@angular/core';
 import moment from 'moment-timezone';
 import blogItems from '../../../content-items/blog-items.json';
 import { BlogItem } from '../model';
@@ -8,14 +9,39 @@ import { BlogItem } from '../model';
     templateUrl: './blog.component.html',
     styleUrls: ['./blog.component.scss']
 })
-export class BlogComponent {
-    public blogItems: BlogItem[];
+export class BlogComponent implements OnInit {
+    @Input() public activeId: number | undefined;
 
-    constructor() {
+    public notFound: boolean;
+    public blogItems: BlogItem[];
+    public activeItem: BlogItem;
+
+    constructor(private location: Location) {
+    }
+
+    public ngOnInit(): void {
         this.blogItems = blogItems
             .map((item) => item as BlogItem)
             .filter((item) => !item.inactive)
             .sort((a, b) => moment(b.date).diff(moment(a.date)));
 
+        const itemFromRoute = this.blogItems.find((item) => Number(item.id) === Number(this.activeId));
+
+        if (itemFromRoute) {
+            this.activeItem = itemFromRoute;
+        } else {
+            if (!!this.activeId) {
+                this.notFound = true;
+                this.location.replaceState('/');
+            }
+
+            this.activeItem = this.blogItems[0];
+        }
+
+        this.activeItem = this.blogItems.find((item) => Number(item.id) === Number(this.activeId)) || this.blogItems[0];
+    }
+
+    public setActiveItem(item: BlogItem): void {
+        this.activeItem = item;
     }
 }

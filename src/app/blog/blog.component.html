@@ -1,17 +1,24 @@
-<h2>{{ blogItems[0].title }}</h2>
-<p>
-    <small class="date">{{ blogItems[0].date | date: 'd MMMM y' }}</small>
+<span *ngIf="notFound" class="not-found" translate>NOT_FOUND</span>
+
+<h2>{{ activeItem.title }}</h2>
+
+<p class="item-date">
+    <small class="date">{{ activeItem.date | date: 'd MMMM y' }}</small>
 </p>
 
-<p *ngFor="let paragraph of blogItems[0].message" [innerHTML]="paragraph"></p>
+<p *ngFor="let paragraph of activeItem.message" [innerHTML]="paragraph"></p>
 
-<h2 translate>HEADINGS.ALL_POSTS</h2>
+<h2 translate>HEADINGS.ALL_ITEMS</h2>
 
-<ul class="all-posts">
+<ul class="all-items">
     <ng-container *ngFor="let item of blogItems">
         <li *ngIf="item.archive">
             <small class="date">{{ item.date | date: 'd MMMM y' }}</small>
-            <a href="#">{{ item.title }}<span *ngIf="item === blogItems[0]"></span></a>
+            <a [routerLink]="['/blog/' + item.id]"
+               (click)="setActiveItem(item)"
+               [class.inactive]="item === activeItem">
+                {{ item.title }}
+            </a>
         </li>
 
     </ng-container>

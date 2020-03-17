@@ -1,5 +1,5 @@
-@import '../styles';
-@import './flags';
+@import '../../styles';
+@import '../flags';
 
 $logo-width: 300px;
 $logo-height: 212px;
@@ -112,7 +112,7 @@ $logo-ratio-medium: 0.5;
 }
 
 .logo {
-    background: url('../assets/logo.png') no-repeat;
+    background: url('../../assets/logo.png') no-repeat;
     width: calc(#{$logo-width} * #{$logo-ratio-medium});
     height: calc(#{$logo-height} * #{$logo-ratio-medium});
     background-size: calc(#{$logo-width} * #{$logo-ratio-medium}) calc(#{$logo-height} * #{$logo-ratio-medium});
