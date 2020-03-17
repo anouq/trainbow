@@ -12,6 +12,29 @@
     padding-left: 14px
 }
 
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+
+    .image-container {
+        flex: 0 0 auto;
+        margin: 2px;
+        display: flex;
+        justify-content: center;
+        max-width: fit-content;
+
+        img {
+            border: 1px solid $light-pink;
+            border-radius: 5px;
+            max-width: 90%;
+        }
+    }
+}
+
 .all-items {
     padding: 0 30px;
 

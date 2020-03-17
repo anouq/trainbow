@@ -8,6 +8,12 @@
 
 <p *ngFor="let paragraph of activeItem.message" [innerHTML]="paragraph"></p>
 
+<div *ngIf="activeItem.images && activeItem.images.length > 0" class="images-container">
+    <div *ngFor="let image of activeItem.images" class="image-container">
+        <img [src]="image" alt="">
+    </div>
+</div>
+
 <h2 translate>HEADINGS.ALL_ITEMS</h2>
 
 <ul class="all-items">
