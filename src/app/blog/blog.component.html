@@ -8,6 +8,10 @@
 
 <p *ngFor="let paragraph of activeItem.message" [innerHTML]="paragraph"></p>
 
+<p *ngIf="activeItem.action && activeItem.actionMessage" class="action">
+    <a [href]="activeItem.action" target="_blank">{{ activeItem.actionMessage }}</a>
+</p>
+
 <div *ngIf="activeItem.images && activeItem.images.length > 0" class="images-container">
     <div *ngFor="let image of activeItem.images" class="image-container">
         <img [src]="image" alt="">
