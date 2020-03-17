@@ -1,4 +1,4 @@
-import { LocationStrategy, PathLocationStrategy, registerLocaleData } from '@angular/common';
+import { LocationStrategy, HashLocationStrategy, registerLocaleData } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import localeNL from '@angular/common/locales/nl';
 import { LOCALE_ID, NgModule } from '@angular/core';
@@ -46,7 +46,8 @@ const routes: Routes = [
         RouterModule.forRoot(routes, {
             anchorScrolling: 'enabled',
             scrollPositionRestoration: 'enabled',
-            onSameUrlNavigation: 'reload'
+            onSameUrlNavigation: 'reload',
+            useHash: true
         }),
         BrowserModule,
         FontAwesomeModule,
@@ -61,7 +62,7 @@ const routes: Routes = [
     ],
     providers: [
         { provide: LOCALE_ID, useValue: 'nl-NL' },
-        { provide: LocationStrategy, useClass: PathLocationStrategy },
+        { provide: LocationStrategy, useClass: HashLocationStrategy },
         BlogResolver
     ],
     bootstrap: [AppComponent]
