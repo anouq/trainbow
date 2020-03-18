@@ -6,6 +6,8 @@ $logo-height: 212px;
 $logo-ratio-large: 0.75;
 $logo-ratio-medium: 0.5;
 
+$sticky-offset: 60px;
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -114,14 +116,11 @@ $logo-ratio-medium: 0.5;
     width: calc(#{$logo-width} * #{$logo-ratio-medium});
     height: calc(#{$logo-height} * #{$logo-ratio-medium});
     background-size: calc(#{$logo-width} * #{$logo-ratio-medium}) calc(#{$logo-height} * #{$logo-ratio-medium});
-    padding: 0 0 30px;
 
     @media screen and (min-width: $m) {
         width: calc(#{$logo-width} * #{$logo-ratio-large});
         height: calc(#{$logo-height} * #{$logo-ratio-large});
         background-size: calc(#{$logo-width} * #{$logo-ratio-large}) calc(#{$logo-height} * #{$logo-ratio-large});
-
-        padding: 0;
     }
 }
 
@@ -164,5 +163,29 @@ $logo-ratio-medium: 0.5;
             padding-right: 15px;
         }
 
+    }
+}
+
+@media screen and (max-width: $m) {
+    .menu-container {
+        align-content: center;
+        padding-top: 20px;
+        background: white;
+        top: 0;
+        position: sticky;
+        padding-bottom: 20px;
+        width: 100%;
+        display: flex
+    }
+
+    .menu {
+        margin: 0 auto;
+    }
+
+    .anchor {
+        display: block;
+        height: $sticky-offset;
+        margin-top: -$sticky-offset;
+        visibility: hidden;
     }
 }
