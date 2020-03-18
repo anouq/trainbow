@@ -47,7 +47,7 @@ const routes: Routes = [
             anchorScrolling: 'enabled',
             scrollPositionRestoration: 'enabled',
             onSameUrlNavigation: 'reload',
-            useHash: true
+            useHash: true,
         }),
         BrowserModule,
         FontAwesomeModule,
