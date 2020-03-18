@@ -15,7 +15,10 @@ export class BaseComponent implements OnInit {
     public faEnvelope = faEnvelope;
     public blogId: number | undefined;
 
+    public random: number;
+
     constructor(private readonly route: ActivatedRoute) {
+        this.random = Math.floor(Math.random() * 5) + 1;
     }
 
     public ngOnInit(): void {

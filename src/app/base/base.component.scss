@@ -103,8 +103,6 @@ $logo-ratio-medium: 0.5;
     border-radius: 5px;
     margin: 0 auto;
     width: 65%;
-
-    @extend %flag#{random(5)};
 }
 
 .logo, .slogan, .social, .menu-container {

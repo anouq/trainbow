@@ -29,26 +29,30 @@
     </nav>
 
     <section class="agenda" id="agenda">
-        <div class="heading-container">
+        <div class="heading-container"
+             [ngClass]="'flag' + random">
             <h1 [innerHTML]="'HEADINGS.AGENDA' | translate"></h1>
         </div>
         <trainbow-agenda></trainbow-agenda>
     </section>
     <section class="member" id="member">
-        <div class="heading-container">
+        <div class="heading-container"
+             [ngClass]="'flag' + random">
             <h1 translate>HEADINGS.MEMBER</h1>
         </div>
         <div [innerHTML]="'STATIC.MEMBER' | translate"></div>
     </section>
     <section class="about" id="about">
-        <div class="heading-container">
+        <div class="heading-container"
+             [ngClass]="'flag' + random">
             <h1 translate>HEADINGS.ABOUT</h1>
         </div>
         <div [innerHTML]="'STATIC.ABOUT' | translate"></div>
     </section>
 
     <article class="blog" id="blog">
-        <div class="heading-container">
+        <div class="heading-container"
+             [ngClass]="'flag' + random">
             <h1 translate>HEADINGS.BLOG</h1>
         </div>
         <trainbow-blog [activeId]="blogId"></trainbow-blog>
