@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { faClock, faInfoCircle, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-import agendaItems from '../../../content-items/agenda-items.json';
+import { AGENDA_ITEMS } from '../../assets/content-items/agenda-items';
 import { AgendaItem } from '../model';
 
 @Component({
@@ -16,6 +16,6 @@ export class AgendaComponent {
     public faInfoCircle = faInfoCircle;
 
     constructor() {
-        this.agendaItems = agendaItems;
+        this.agendaItems = AGENDA_ITEMS;
     }
 }

@@ -1,7 +1,7 @@
 import { Location } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import moment from 'moment-timezone';
-import blogItems from '../../../content-items/blog-items.json';
+import { BLOG_ITEMS } from '../../assets/content-items/blog-items';
 import { BlogItem } from '../model';
 
 @Component({
@@ -20,7 +20,7 @@ export class BlogComponent implements OnInit {
     }
 
     public ngOnInit(): void {
-        this.blogItems = blogItems
+        this.blogItems = BLOG_ITEMS
             .map((item) => item as BlogItem)
             .filter((item) => !item.inactive)
             .sort((a, b) => moment(b.date).diff(moment(a.date)));
