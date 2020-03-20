@@ -4,6 +4,8 @@ $m: 680px;
 $l: 960px;
 $xl: 1400px;
 
+$wide-letter-spacing: 2.3px;
+
 $light-pink: #f7a8b8;
 $light-blue: #4aabd6;
 $purple: #4c1fc0;
@@ -17,7 +19,7 @@ html, body {
 body {
     font-family: 'Lato', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
     color: #3e3e3e;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.15px;
     font-size: 18px;
 }
 
@@ -51,7 +53,7 @@ a {
 
 h1 {
     text-transform: lowercase;
-    letter-spacing: 3px;
+    letter-spacing: $wide-letter-spacing;
     color: #3e3e3e;
     text-align: center;
     margin: 0 auto;
@@ -66,7 +68,7 @@ h2 {
 }
 
 h3 {
-    letter-spacing: 3px;
+    letter-spacing: $wide-letter-spacing;
 }
 
 fa-icon {
@@ -78,6 +80,6 @@ fa-icon {
 
 .date {
     color: grey;
-    letter-spacing: 3px;
+    letter-spacing: $wide-letter-spacing;
     padding-right: 7px;
 }
