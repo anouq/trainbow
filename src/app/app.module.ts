@@ -1,4 +1,4 @@
-import { LocationStrategy, HashLocationStrategy, registerLocaleData } from '@angular/common';
+import { HashLocationStrategy, LocationStrategy, registerLocaleData } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import localeNL from '@angular/common/locales/nl';
 import { LOCALE_ID, NgModule } from '@angular/core';
@@ -12,8 +12,10 @@ import { AppComponent } from './app.component';
 import { BaseComponent } from './base/base.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogResolver } from './blog/blog.resolver';
+import { RedirectQuizComponent } from './redirect-quiz.component';
 
 const routes: Routes = [
+    { path: 'quiz', pathMatch: 'full', component: RedirectQuizComponent },
     {
         path: '',
         pathMatch: 'full',
@@ -40,14 +42,15 @@ const routes: Routes = [
         AppComponent,
         BaseComponent,
         AgendaComponent,
-        BlogComponent
+        BlogComponent,
+        RedirectQuizComponent
     ],
     imports: [
         RouterModule.forRoot(routes, {
             anchorScrolling: 'enabled',
             scrollPositionRestoration: 'enabled',
             onSameUrlNavigation: 'reload',
-            useHash: true,
+            useHash: true
         }),
         BrowserModule,
         FontAwesomeModule,
